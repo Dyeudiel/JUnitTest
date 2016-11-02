@@ -19,4 +19,9 @@ public class Venta {
             
         }        
         
+        private float existencias;
+	
+	public float compararExistencias(float existecias) throws Exception{
+           return existecias;
+        }
 }
