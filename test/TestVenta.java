@@ -32,6 +32,17 @@ public class TestVenta {
 	// public void hello() {}
 	
 	@Test
+	public void pruebaCalculo(){
+		try {
+			venta.fijarPeso((float) 5.2);
+		} catch (Exception ex) {
+			return;
+		}
+		
+		
+	}
+	
+	@Test
 	public void pruebaPeso0() {
 		
 		try {
