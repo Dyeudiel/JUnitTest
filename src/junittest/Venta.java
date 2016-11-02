@@ -1,16 +1,8 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package junittest;
 
-/**
- *
- * @author Administrator
- */
 public class Venta {
 	private float peso;
+	private float precio;
 	
 	
 	public void fijarPeso(float peso) throws Exception{
@@ -20,4 +12,12 @@ public class Venta {
 		
 		this.peso = peso;
 	}
+    
+	
+	public float calcularprecio(float precio) throws Exception{
+            
+		return precio*peso;
+            
+    }        
+        
 }
