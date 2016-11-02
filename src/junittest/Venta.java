@@ -4,9 +4,11 @@ public class Venta {
 	private float peso;
 	private float precio;
 	
+	public static String errorCalculoPeso = "El peso indicado debe ser superior a 0";
+	
 	public void fijarPeso(float peso) throws Exception{
 		if(peso == 0){
-			throw new Exception("Ummm");
+			throw new Exception(Venta.errorCalculoPeso);
 		}
 		
 		this.peso = peso;
@@ -16,10 +18,10 @@ public class Venta {
 		return precio*peso;    
     }        
         
-    private float existencias;
+    private float existencias = 3500;
 	
-	public float compararExistencias(float existecias) throws Exception{
-		return existecias;
+	public float obtenerExistencias(){
+		return existencias;
     }
 
 }
